@@ -1,2 +1,2 @@
-# Flexible Aspect Ratio Image Layout
+# Flexible Image Containers
 This is as simple HTML page demonstrating responsive image layouts using containers with a flexible aspect ratio and optionally support showing a low resolution render of the image in the background (for portrait images and lazy load).
