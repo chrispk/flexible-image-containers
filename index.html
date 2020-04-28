@@ -4,13 +4,27 @@
     <style type="text/css">
       body {
         background: #fdfdfd;
+        margin:0;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      pre {
+        padding: 8px 12px;
+        overflow-x: auto;
+        border: 1px solid #e8e8e8;
+        border-radius: 3px;
+        background-color: #eef;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
       }
       .container {
         width: 100%;
         padding-right: 15px;
         padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto 30px;
         max-width: 720px;
       }
       .aspect-ratio-box {
@@ -26,7 +40,7 @@
         margin-left: -1px;
         float: left;
         height: 0;
-        padding-top: 65.4%;
+        padding-top: 66%;
       }
       .aspect-ratio-box::after { /* to clear float */
         content: "";
@@ -44,7 +58,7 @@
         transform: scale(1.05);
         z-index: -1;
       }
-      img {
+      .aspect-ratio-img {
         max-width: 100%;
         max-height: 95vh;
         min-height: 491px;
@@ -53,15 +67,24 @@
     </style>
   </head>
   <body>
+    <a href="https://github.com/chrispk/flexible-image-containers"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_red_aa0000.png?resize=149%2C149" style="position: absolute;top:0;" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     <div class="container">
-      <h1>Portrait image</h1>
-      <div class="aspect-ratio-box" style="--background: url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAqRXhpZgAASUkqAAgAAAABADEBAgAHAAAAGgAAAAAAAABHb29nbGUAAP/bAIQAAwICAwICAwMDAwQDAwQFCAUFBAQFCgcHBggMCgwMCwoLCw0OEhANDhEOCwsQFhARExQVFRUMDxcYFhQYEhQVFAEDBAQFBAYKBgYJEw0LDhIVERUSFRURDw0RFRUPEBISDQ8QFRQQDxIQEhAQEg8QEA8SDw4PEg8PFRAQDRMSDxAP/8AAEQgAKAAbAwERAAIRAQMRAf/EABoAAAICAwAAAAAAAAAAAAAAAAUGAwQABwn/xAAtEAABBAECBQIFBQEAAAAAAAABAgMEEQUSIQAGBzFBE1EUFUJhsQgiMlKRJP/EABkBAQEBAQEBAAAAAAAAAAAAAAQFAwIGAf/EAC0RAAICAQIDBgUFAAAAAAAAAAECABEDITEEEiIygZGh0fAUQVFx4RMzYbHB/9oADAMBAAIRAxEAPwDoZlepGL5fkw0S5jRblqUhPpK1lFeSB48cHzcVw+Ourw1r7zJBlJOkW+p3WDGYrB/8UxmTIRKbaXoSpWj6u4G4IBFi/bzxlk4oJ+ybN935+mk6bH+sKcaecU8p11gctNmLloMpvLempSWGwDqCbP3INb9iPxwteOcLTp1fxtAfBAm1bpmQus7vwjXxEKN6+ka7eWDf3AQQP945HGuNwL7/AEm3wSnYny9YjcxynMcMjJVJcWmOFIDjSbNkqGkHVY7AmwBsTx5c8Mh1u56bK5IqolxM9JE9ouQH47jyVBbjq0OoTpO2pIuySE+NrPbe9AjYNqseknMOeQZ9zPvuNzlS0T5RcbDMlhlOspV+26SLFWLobi7rbhBK5N7s+/d1PqdOkxiXlIrKWnnYK3EbFTxSVn2J7fjgLuyGgYsKp1qXci1Jhy1Ts/HLGPdYUhTTRAFuagaoHXpv+ABO24I4dhGMHRdYnOhbQmKErn6Fh8DbeSx7nryExlwktOFTjYcC9yUjULSFDzVC/akGe6C6VJ5xLd80LN9X3Yb0zLSsi3IiydcZMeK0dEYKN6UkI7KOkDfYg9grgjnIRS6Ez6ExiHMTzfFysBuXJxDHqvFSiVH0yRqNEp1bWK4g5Hy8x1jlxoRFXnX9TeJdnuwo+Mbyb0x9uO16bCi3QXqSkrUtKLIOmt707nseLuLhWq9ptmZRp8/KAH2eoXMEjLxonSlGXhPJSIz8yZBbEaQhzUCoF491KVqRrKiAkEWpR4cq467eo+/hJrOQez/XjDbnMONqOzzRhY+EyLLSmWYcGAzNR6gdC3wpG2lpetISaN6SoE8AbG1nlb/L+n5mqgVtvC8rnPkVqQtMaJm2mLtDacUzSB/Xd4Hbt2HAW4Z77UoKCB2ZezP6UscuS+83k0lglKkamVh1CknYFxtwXv3NfSPPDcfFsALE5cKTJOY+gfzjEx47GacmTo5UywvIyJCUNMb0hISo0rcfu8mzXgbrxJG+3dC8ig6CCeROmXOvJ7kgifj/AJgkloPTpjsxK2rP0rSaoVWnTukAUkUc8uXHk+RruEQi8om4sHiW14mMrK4vA/MCm3vhMdqau/pUSCdq3oX7Dia7G+m6jFAqf//Z)">
-          <img title="Portrait image" src="./assets/portrait-image.jpg" loading="lazy">
-      </div>
-      <h1>Landscape image</h1>
+      <h1>Flexible Image Containers</h1>
+      <p>This is as simple HTML page demonstrating responsive image layouts using containers with a flexible aspect ratio and optionally support showing a low resolution render of the image in the background (for portrait images and lazy load).</p>
+      <h2>Landscape image</h2>
+      <p>Image containers are set with a minimum aspect ratio and will expand in height to fit the image.</p>
+      <p>The image containers on this page have a minimum aspect ratio set to approximately 3:2 (padding-top: 66%) which matches the landscape image below.</p>
       <div class="aspect-ratio-box">
-          <img title="Landscape image" src="./assets/landscape-image.jpg" loading="lazy">
+          <img title="Landscape image" src="./assets/landscape-image.jpg" loading="lazy" class="aspect-ratio-img">
       </div>
+      <h2>Portrait image</h2>
+      <p>The image below is taller but the container naturally increases in height to fit.</p>
+      <p>The blurred background image is optional and can be set on the image container element. This is achieved here by encoding a 27x40px render of the image to base64. This can be done using the following command or using an online tool (<a href="https://base64.guru/converter/encode/image">like this</a>):</p>
+      <pre><code>cat path/to/image.jpg | openssl base64</code></pre>
+      <div class="aspect-ratio-box" style="--background: url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAqRXhpZgAASUkqAAgAAAABADEBAgAHAAAAGgAAAAAAAABHb29nbGUAAP/bAIQAAwICAwICAwMDAwQDAwQFCAUFBAQFCgcHBggMCgwMCwoLCw0OEhANDhEOCwsQFhARExQVFRUMDxcYFhQYEhQVFAEDBAQFBAYKBgYJEw0LDhIVERUSFRURDw0RFRUPEBISDQ8QFRQQDxIQEhAQEg8QEA8SDw4PEg8PFRAQDRMSDxAP/8AAEQgAKAAbAwERAAIRAQMRAf/EABoAAAICAwAAAAAAAAAAAAAAAAUGAwQABwn/xAAtEAABBAECBQIFBQEAAAAAAAABAgMEEQUSIQAGBzFBE1EUFUJhsQgiMlKRJP/EABkBAQEBAQEBAAAAAAAAAAAAAAQFAwIGAf/EAC0RAAICAQIDBgUFAAAAAAAAAAECABEDITEEEiIygZGh0fAUQVFx4RMzYbHB/9oADAMBAAIRAxEAPwDoZlepGL5fkw0S5jRblqUhPpK1lFeSB48cHzcVw+Ourw1r7zJBlJOkW+p3WDGYrB/8UxmTIRKbaXoSpWj6u4G4IBFi/bzxlk4oJ+ybN935+mk6bH+sKcaecU8p11gctNmLloMpvLempSWGwDqCbP3INb9iPxwteOcLTp1fxtAfBAm1bpmQus7vwjXxEKN6+ka7eWDf3AQQP945HGuNwL7/AEm3wSnYny9YjcxynMcMjJVJcWmOFIDjSbNkqGkHVY7AmwBsTx5c8Mh1u56bK5IqolxM9JE9ouQH47jyVBbjq0OoTpO2pIuySE+NrPbe9AjYNqseknMOeQZ9zPvuNzlS0T5RcbDMlhlOspV+26SLFWLobi7rbhBK5N7s+/d1PqdOkxiXlIrKWnnYK3EbFTxSVn2J7fjgLuyGgYsKp1qXci1Jhy1Ts/HLGPdYUhTTRAFuagaoHXpv+ABO24I4dhGMHRdYnOhbQmKErn6Fh8DbeSx7nryExlwktOFTjYcC9yUjULSFDzVC/akGe6C6VJ5xLd80LN9X3Yb0zLSsi3IiydcZMeK0dEYKN6UkI7KOkDfYg9grgjnIRS6Ez6ExiHMTzfFysBuXJxDHqvFSiVH0yRqNEp1bWK4g5Hy8x1jlxoRFXnX9TeJdnuwo+Mbyb0x9uO16bCi3QXqSkrUtKLIOmt707nseLuLhWq9ptmZRp8/KAH2eoXMEjLxonSlGXhPJSIz8yZBbEaQhzUCoF491KVqRrKiAkEWpR4cq467eo+/hJrOQez/XjDbnMONqOzzRhY+EyLLSmWYcGAzNR6gdC3wpG2lpetISaN6SoE8AbG1nlb/L+n5mqgVtvC8rnPkVqQtMaJm2mLtDacUzSB/Xd4Hbt2HAW4Z77UoKCB2ZezP6UscuS+83k0lglKkamVh1CknYFxtwXv3NfSPPDcfFsALE5cKTJOY+gfzjEx47GacmTo5UywvIyJCUNMb0hISo0rcfu8mzXgbrxJG+3dC8ig6CCeROmXOvJ7kgifj/AJgkloPTpjsxK2rP0rSaoVWnTukAUkUc8uXHk+RruEQi8om4sHiW14mMrK4vA/MCm3vhMdqau/pUSCdq3oX7Dia7G+m6jFAqf//Z)">
+          <img title="Portrait image" src="./assets/portrait-image.jpg" loading="lazy" class="aspect-ratio-img">
+      </div>
+      <p>Go to the <a href="https://github.com/chrispk/flexible-image-containers">GitHub repository</a> for this project or <a href="view-source:https://chrispk.github.io/flexible-image-containers">view the source code</a> to see more.</p>
     </div>
   </body>
 </html>
